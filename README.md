@@ -8,10 +8,41 @@ To write a program to predict the profit of a city using the linear regression m
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+1.Here is a **4-point (4 steps) algorithm** for **Implementation of Linear Regression using Gradient Descent**, written in **simple exam style**.
+
+---
+
+## Algorithm: Linear Regression Using Gradient Descent (4 Points)
+
+**Step 1: Initialize parameters**
+Set initial values of slope (m) and intercept (b) to 0.
+Choose learning rate ( \alpha ) and number of iterations.
+
+**Step 2: Compute prediction and error**
+For each data point, compute predicted value
+[
+\hat{y} = mx + b
+]
+and find the error ( (\hat{y} - y) ).
+
+**Step 3: Compute gradients**
+Calculate partial derivatives of the cost function:
+[
+\frac{\partial J}{\partial m} = \frac{2}{n}\sum (\hat{y}-y)x
+]
+[
+\frac{\partial J}{\partial b} = \frac{2}{n}\sum (\hat{y}-y)
+]
+
+**Step 4: Update parameters**
+Update (m) and (b) using gradient descent:
+[
+m = m - \alpha \frac{\partial J}{\partial m}
+]
+[
+b = b - \alpha \frac{\partial J}{\partial b}
+]
+Repeat until convergence.
 
 ## Program:
 ```
